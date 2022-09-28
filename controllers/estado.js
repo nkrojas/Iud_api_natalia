@@ -31,7 +31,7 @@ const createEstado = async (req = request,
 //Consulta todos los tipos de equipo
 const getEstados = async (req = request,
     res = response) => {
-
+//hola
     }
 //Consulta un tipo de equipo por su ID
 const getEstadoByID = async (req = request,
