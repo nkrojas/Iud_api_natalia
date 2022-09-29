@@ -1,7 +1,7 @@
 const Marca = require('../models/marca')
 const { request, response } = require('express')
 
-//Crea un tipo de equipo
+//Crea una marca
 const createMarca = async (req = request, 
     res = response) => {
         try{
@@ -28,24 +28,61 @@ const createMarca = async (req = request,
         }
 }
 
-//Consulta todos los tipos de equipo
+//Consulta todas las marcas
 const getMarcas = async (req = request,
     res = response) => {
-
+        try{
+            console.log(req.query)
+            const estado = req.query.estado
+            const query = { estado: estado }
+            const marcas = await Marca.find(query)
+            return res.json(marcas)
+        }catch(e){
+            return res.status(500).json({msj: e})
+        }
     }
-//Consulta un tipo de equipo por su ID
+//Consulta marca por su ID
 const getMarcaByID = async (req = request,
     res = response) => {
-
+        try{
+            const id = req.params.id
+            const marcaDB = await Marca.findById(id)
+            return res.json(marcaDB)
+        }catch(e){
+            return res.status(500).json({msj: e})
+        }
     }
-//Actualiza un tipo de equipo por su ID
+//Actualiza marca por su ID
 const updateMarcaByID = async (req = request,
     res = response) => {
+        try{
+            const id = req.params.id
+            const data = req.body
+            console.log(data)
+            console.log(id)
+            data.fechaActualizacion = new Date()
+            console.log(data)
+            const marca = await Marca.findByIdAndUpdate(id, data, {new: true})
+            return res.status(201).json(marca)
+        }catch(e){
+            return res.status(500).json({msj: e})
+        } 
     }
 //Borra un tipo de equipo por su ID
 
 const deleteMarcaByID = async (req = request,
     res = response) => {
+        try{
+            const id = req.params.id
+            const marcaBD = await Marca.findById(id)
+            if(!marcaBD){
+                return res.status(404).json({msj: 'No existe marca'})
+            }
+            await Marca.findByIdAndDelete(id)
+            return res.status(204).json({})
+        }catch(e){
+            return res.status(500).json({msj: e})
+        }
     }
 
 module.exports = {

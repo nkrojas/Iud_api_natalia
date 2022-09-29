@@ -31,22 +31,67 @@ const createTipoEquipo = async (req = request,
 //Consulta todos los tipos de equipo
 const getTiposEquipo = async (req = request,
     res = response) => {
-
+        try{
+            console.log(req.query)
+            const estado = req.query.estado
+            const query = {estado: true}
+            const tipoequiposDB = await TipoEquipo.find(query)
+            return res.json(tipoequiposDB)
+        }catch(e){
+            console.log(e)
+            return res.status(500).json({msg: e})  
+        }
     }
 //Consulta un tipo de equipo por su ID
 const getTipoEquipoByID = async (req = request,
     res = response) => {
-
+        try{
+            console.log(req.params)
+            const id = req.params.id
+            const query = {_id: id}
+            const tipoequipoDB = await TipoEquipo.findOne(query)
+            return res.json(tipoequipoDB)
+        }catch(e){
+            console.log(e)
+            return res.status(500).json({msg: e})  
+        }
     }
 //Actualiza un tipo de equipo por su ID
 const updateTipoEquipoByID = async (req = request,
     res = response) => {
+        try{
+            console.log(req.body)
+            console.log(req.params)
+            const data = req.body
+            const id = req.params.id
+
+            data.fechaActualizacion = new Date()
+            console.log(data)
+            const tipoEquipo = await TipoEquipo.findByIdAndUpdate(id, data, {new: true})
+            return res.json(tipoEquipo)
+        }catch(e){
+            console.log(e)
+            return res.status(500).json({msg: e})  
+        }
     }
 //Borra un tipo de equipo por su ID
 
 const deleteTipoEquipoByID = async (req = request,
     res = response) => {
+    try{
+        console.log(req.params)
+        const id = req.params.id
+        const tipoequipoDB = await TipoEquipo.findById(id)
+        if(!tipoequipoDB){
+            return res.status(404).json({msg: 'No existe el tipo equipo'})
+        }
+        await TipoEquipo.findByIdAndDelete(id)
+        return res.status(204).json({msg: 'Se ha eliminado el tipo de equipo: ', id})
+    }catch(e){
+        console.log(e)
+        return res.status(500).json({msg: e})  
     }
+}
 
 module.exports = {
     createTipoEquipo,
