@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"computador\",\r\n    \"estado\": \"true\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"movil\",\r\n    \"estado\": \"true\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -24,11 +24,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos",
+							"raw": "localhost:4000/api/tipoequipos",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
 								"tipoequipos"
@@ -50,11 +50,11 @@
 							"raw": "{\r\n    \"nombre\": \"mas\"\r\n    \"estado\": \"true\"\r\n}"
 						},
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos?estado=true",
+							"raw": "localhost:4000/api/tipoequipos?estado=true",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
 								"tipoequipos"
@@ -82,15 +82,15 @@
 							"raw": "{\r\n    \"nombre\": \"mas\"\r\n    \"estado\": \"true\"\r\n}"
 						},
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos/633602147a580b839d5b73df?estado=true",
+							"raw": "localhost:4000/api/tipoequipos/6336329ba87165d916cd378b?estado=true",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
 								"tipoequipos",
-								"633602147a580b839d5b73df"
+								"6336329ba87165d916cd378b"
 							],
 							"query": [
 								{
@@ -117,15 +117,15 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos/633602147a580b839d5b73df",
+							"raw": "localhost:4000/api/tipoequipos/633604667505ebc46a3fa922",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
 								"tipoequipos",
-								"633602147a580b839d5b73df"
+								"633604667505ebc46a3fa922"
 							]
 						}
 					},
@@ -146,15 +146,15 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos/633604597505ebc46a3fa91d",
+							"raw": "localhost:4000/api/tipoequipos/633604667505ebc46a3fa922",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
 								"tipoequipos",
-								"633604597505ebc46a3fa91d"
+								"633604667505ebc46a3fa922"
 							]
 						}
 					},
@@ -172,7 +172,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"logitech\",\r\n    \"estado\": \"true\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"AOC\",\r\n    \"estado\": \"true\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -180,14 +180,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/marca/",
+							"raw": "localhost:4000/api/marcas/",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"marca",
+								"marcas",
 								""
 							]
 						}
@@ -212,14 +212,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/marca?estado=true",
+							"raw": "localhost:4000/api/marcas?estado=true",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"marca"
+								"marcas"
 							],
 							"query": [
 								{
@@ -249,15 +249,15 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/marca/633606bec6e8bbbbeb8f8600",
+							"raw": "localhost:4000/api/marcas/6336164edcd1aea63a27fb20",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"marca",
-								"633606bec6e8bbbbeb8f8600"
+								"marcas",
+								"6336164edcd1aea63a27fb20"
 							]
 						}
 					},
@@ -278,11 +278,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/marca/633605916d4ac2320ff46a5c",
+							"raw": "localhost:4000/api/marca/633605916d4ac2320ff46a5c",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
 								"marca",
@@ -307,15 +307,15 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/marca/633605916d4ac2320ff46a5c",
+							"raw": "localhost:4000/api/marcas/633606bec6e8bbbbeb8f8600",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"marca",
-								"633605916d4ac2320ff46a5c"
+								"marcas",
+								"633606bec6e8bbbbeb8f8600"
 							]
 						}
 					},
@@ -333,7 +333,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"false\",\r\n    \"estado\": \"false\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"En Bodega\",\r\n    \"estado\": \"false\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -341,14 +341,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/estado/",
+							"raw": "localhost:4000/api/estados/",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"estado",
+								"estados",
 								""
 							]
 						}
@@ -373,14 +373,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/estado?estado=true",
+							"raw": "localhost:4000/api/estados?estado=true",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"estado"
+								"estados"
 							],
 							"query": [
 								{
@@ -410,15 +410,15 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/estado/63360edccac43bf20c96800a",
+							"raw": "localhost:4000/api/estados/633616e9dcd1aea63a27fb2c",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"estado",
-								"63360edccac43bf20c96800a"
+								"estados",
+								"633616e9dcd1aea63a27fb2c"
 							]
 						}
 					},
@@ -431,7 +431,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"true\",\r\n    \"estado\": \"false\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Inactivo\",\r\n    \"estado\": \"false\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -439,15 +439,15 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/estado/63360edccac43bf20c96800a",
+							"raw": "localhost:4000/api/estados/633616e9dcd1aea63a27fb2c",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"estado",
-								"63360edccac43bf20c96800a"
+								"estados",
+								"633616e9dcd1aea63a27fb2c"
 							]
 						}
 					},
@@ -468,14 +468,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/estado/63360edccac43bf20c96800a",
+							"raw": "localhost:4000/api/estados/63360edccac43bf20c96800a",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"estado",
+								"estados",
 								"63360edccac43bf20c96800a"
 							]
 						}
@@ -494,7 +494,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"natalia\",\r\n    \"email\": \"nat@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"junior\",\r\n    \"email\": \"jpl@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -502,14 +502,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/usuario/",
+							"raw": "localhost:4000/api/usuarios/",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"usuario",
+								"usuarios",
 								""
 							]
 						}
@@ -534,14 +534,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/usuario?estado=true",
+							"raw": "localhost:4000/api/usuarios?estado=true",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"usuario"
+								"usuarios"
 							],
 							"query": [
 								{
@@ -571,21 +571,15 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/usuario/6336190bdcd1aea63a27fb39?estado=true",
+							"raw": "localhost:4000/api/usuarios/63361950dcd1aea63a27fb42",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"usuario",
-								"6336190bdcd1aea63a27fb39"
-							],
-							"query": [
-								{
-									"key": "estado",
-									"value": "true"
-								}
+								"usuarios",
+								"63361950dcd1aea63a27fb42"
 							]
 						}
 					},
@@ -606,15 +600,15 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/usuario/6336190bdcd1aea63a27fb39",
+							"raw": "localhost:4000/api/usuarios/63361950dcd1aea63a27fb42",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"usuario",
-								"6336190bdcd1aea63a27fb39"
+								"usuarios",
+								"63361950dcd1aea63a27fb42"
 							]
 						}
 					},
@@ -635,14 +629,14 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/usuario/63360fd792ea45f8073f5013",
+							"raw": "localhost:4000/api/usuarios/63360fd792ea45f8073f5013",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
-								"usuario",
+								"usuarios",
 								"63360fd792ea45f8073f5013"
 							]
 						}
@@ -655,16 +649,25 @@
 			"name": "Inventario",
 			"item": [
 				{
-					"name": "Consultar inventario",
+					"name": "Crear inventario",
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"serial\": \"1111-2222-3345-323\",\r\n\"modelo\": \"1960\",\r\n\"descripcion\": \"\",\r\n\"foto\": \"\",\r\n\"color\": \"\",\r\n\"fechaCompra\": \"2022-01-01\",\r\n\"precio\": \"300\",\r\n\"usuario\": {\r\n \"_id\": \"63361950dcd1aea63a27fb42\"\r\n},\r\n\"marca\": {\r\n \"_id\": \"633632d4a87165d916cd3795\"\r\n},\r\n\"estado\": {\r\n \"_id\": \"633616e9dcd1aea63a27fb2c\"\r\n},\r\n\"tipoEquipo\": {\r\n \"_id\": \"6336164edcd1aea63a27fb20\"\r\n}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "localhost:3000/api/inventarios",
+							"raw": "localhost:4000/api/inventarios",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
 								"inventarios"
@@ -674,16 +677,28 @@
 					"response": []
 				},
 				{
-					"name": "Crear inventario",
+					"name": "Consultar inventario",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
 						"url": {
-							"raw": "localhost:3000/api/inventarios",
+							"raw": "localhost:4000/api/inventarios",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "4000",
 							"path": [
 								"api",
 								"inventarios"
